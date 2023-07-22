@@ -1,15 +1,12 @@
-"use client";
+import Header from "@/components/templates/Header";
 import MainComponent from "@/components/templates/mainComponent";
-import "./globals.css"
 
-
-const HomePage = () => {
+const Home = () => {
   return (
     <>
-    
+      <Header />
       <MainComponent />
     </>
   );
 };
-
-export default HomePage;
+export default Home;

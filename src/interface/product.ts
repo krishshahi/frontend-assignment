@@ -14,4 +14,5 @@ interface IProducts {
 
 export interface IProductData {
   product_data: IProducts[];
+  one_product_data: {};
 }

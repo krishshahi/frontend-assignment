@@ -16,13 +16,20 @@ const SelectComponent: React.FC<ISelect> = ({
 }) => {
   return (
     <div>
-      <select id={id} value={value} onChange={onChange}>
+      <select
+        id={id}
+        value={value}
+        onChange={onChange}
+        className="px-16 py-4 rounded-md w-280"
+      >
         {options &&
           options.map((item, i) => {
             return (
-              <option key={item.value} value={item.value}>
-                {item.name}
-              </option>
+              <>
+                <option key={item.value} value={item.value}>
+                  {item.name}
+                </option>
+              </>
             );
           })}
       </select>
